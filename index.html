@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S Trader | פלטפורמת המסחר המקצועית שלך</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="syllabus.css">
+    <link rel="stylesheet" href="rules.css">
+    <link rel="stylesheet" href="questionnaire.css">
+    <link rel="stylesheet" href="faq.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("yfk17t7I6U4elJk6X"); // Your Public Key
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+    <div id="trading-bg-overlay"></div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/972547899848?text=היי,%20אשמח%20לשמוע%20עוד%20פרטים%20על%20ההכשרה" class="whatsapp-float"
+        target="_blank" title="צ'אט בוואטסאפ">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <span class="whatsapp-tooltip">דברו איתי בוואטסאפ</span>
+
+    <nav>
+        <div class="logo">
+            <img src="1233.png" alt="S Trader Logo" class="logo-img" id="nav-logo-img">
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a onclick="showPage('home'); closeMenu();">דף הבית</a></li>
+            <li><a onclick="scrollToSection('about-section'); closeMenu();">אודות</a></li>
+            <li><a onclick="showPage('courses'); closeMenu();">הכשרות וקורסים דיגיטליים</a></li>
+            <li><a onclick="scrollToSection('student-trades-section'); closeMenu();">עסקאות תלמידים</a></li>
+            <li><a onclick="showPage('journals'); closeMenu();">יומני מסחר</a></li>
+            <li><a onclick="scrollToSection('questionnaire'); closeMenu();">שיחת ייעוץ</a></li>
+        </ul>
+
+    </nav>
+
+    <main id="mainContent">
+        <!-- Home Page (Now focusing on Contact & About) -->
+        <div id="homePage">
+            <!-- Contact Section (Tab 1 of Home) -->
+            <div class="contact-mini-section">
+                <!-- Flying Numbers Container -->
+                <div class="flying-data-container" id="flyingData"></div>
+
+                <div class="contact-logo-placeholder" style="text-align: center; margin-bottom: 3rem;">
+                    <img src="1233.png" alt="S Trader Logo"
+                        style="max-width: 900px; width: 95%; height: auto; filter: drop-shadow(0 15px 40px rgba(0,0,0,0.6));">
+                </div>
+
+                <!-- Minimalistic Questionnaire Button -->
+                <div class="hero-cta-container">
+                    <button onclick="scrollToSection('questionnaire')" class="minimal-hero-btn">
+                        <span class="btn-text">לתיאום שיחת ייעוץ ובדיקת התאמה</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- About Section (Underneath Contact) -->
+            <section id="about-section">
+                <div class="about-container">
+
+
+
+                    <div class="about-image-wrapper">
+                        <div
+                            style="width: 100%; height: 100%; border: 3px solid var(--accent-gold); border-radius: 20px; overflow: hidden; box-shadow: 0 0 25px rgba(197, 160, 89, 0.15);">
+                            <img src="1244.png"
+                                style="width: 100%; height: 100%; object-fit: cover; image-rendering: high-quality;">
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <h2
+                            style="font-size: 3.5rem; color: var(--accent-gold); margin-bottom: 2rem; text-align: center;">
+                            קצת עלי</h2>
+
+                        <p style="font-size: 1.3rem; line-height: 1.9; margin-bottom: 1.5rem;">
+                            <strong>נעים מאוד, אני שמעון שוקרון בן 26,</strong> סוחר מקצועי בבורסה האמריקאית,<br>
+                            מייסד S-Trader לימודי מסחר ושוק ההון.
+                        </p>
+                        <p style="font-size: 1.25rem; line-height: 1.9; margin-bottom: 1.5rem;">
+                            המסע שלי בשוק ההון לא התחיל בגרפים ירוקים. הוא התחיל בדרך הקשה, הפסדים ולילות ללא שינה מול
+                            המחשב בניסיון להבין מה לא עובד לי ואיך אוכל לשפר ולדייק את המסחר לאחוזי הצלחה גבוהים. אחרי
+                            הפסדים של 70,000 ש"ח שנמחקו בשני תיקי מסחר, למדתי את מה שכולם לומדים, "מניות גדולות"
+                            ו"תבניות טכניות שניתן למצוא בחינם ביוטיוב". השאלה שלי הייתה, אם כולם לומדים את אותו הדבר,
+                            איך זה ששום דבר לא עובד? מהר מאוד הבנתי שהשיטות האלו פשוט לא עובדות ושסוחר שמתחיל על מניות
+                            גדולות בלי תיק גדול יתקשה מאוד לייצר רווחים.
+                        </p>
+                        <p style="font-size: 1.25rem; line-height: 1.9; margin-bottom: 1.5rem;">
+                            מתוך התסכול התחלתי לחקור ולחפש מה יכול לעבוד בשבילי, וגיליתי את עולם מניות ה-Penny Stocks.
+                            שם ראיתי את ההזדמנות האמיתית, מניות קטנות שמתפוצצות במאות אחוזים ביום ומאפשרות לי לסחור
+                            כסוחר מתחיל גם עם 100 דולר בחשבון ולהגדיל אותו בהדרגה. במשך שנה שלמה התמקצעתי בזיהוי
+                            מניפולציות שוק, אסטרטגיות מסחר וניהול סיכונים מתמטי קפדני, ופיתחתי מודלים ייחודיים שלא תמצאו
+                            בשום ספר לימוד.
+                        </p>
+                        <p style="font-size: 1.25rem; line-height: 1.9;">
+                            הקמתי את S-Trader כדי לתת ערך לסוחרים מתחילים בליווי שלם ומעמיק, מה שלא היה לי כשהתחלתי.
+                            מקלט של אמת מקצועית, כלים פרקטיים וקהילה שלא מוותרת על אף עסקה בלי ללמוד ממנה. אני לא מלמד
+                            תבניות טכניות, אני מלמד מודלים ואסטרטגיות מסחר שפיתחתי במשך שנה שלמה עם אחוזי הצלחה גבוהים
+                            והכי חשוב, לדעת לקרוא ולנתח גרפים בצורה מקצועית.
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+
+
+
+            <!-- Student Trades Section (Moved to Home) -->
+            <section id="student-trades-section">
+                <div class="section-header">
+                    <h2>עסקאות תלמידים</h2>
+                    <p style="font-size: 1.25rem; color: rgba(255,255,255,0.8); max-width: 800px; margin: 1rem auto;">כל
+                        עסקה כאן היא לא קסם, אלא עבודה קשה שבסוף משתלמת. הסוד להצלחה בתחום הזה הוא התמדה, משמעת עצמית
+                        וסבלנות.</p>
+                </div>
+                <div class="slider-container">
+                    <button class="gallery-arrow prev" onclick="scrollGallery('tradesGallery', -1)"><i
+                            class="fas fa-chevron-right"></i></button>
+                    <button class="gallery-arrow next" onclick="scrollGallery('tradesGallery', 1)"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <div class="student-gallery" id="tradesGallery">
+                        <div class="gallery-photo"><img src="1.jpeg" alt="עסקת תלמיד 1"></div>
+                        <div class="gallery-photo"><img src="2.jpg" alt="עסקת תלמיד 2"></div>
+                        <div class="gallery-photo"><img src="3.jpg" alt="עסקת תלמיד 3"></div>
+                        <div class="gallery-photo"><img src="4.jpg" alt="עסקת תלמיד 4"></div>
+                        <div class="gallery-photo"><img src="5.jpg" alt="עסקת תלמיד 5"></div>
+                        <div class="gallery-photo"><img src="6.jpg" alt="עסקת תלמיד 6"></div>
+                        <div class="gallery-photo"><img src="7.jpg" alt="עסקת תלמיד 7"></div>
+                        <div class="gallery-photo"><img src="8.jpg" alt="עסקת תלמיד 8"></div>
+                        <div class="gallery-photo"><img src="9.jpg" alt="עסקת תלמיד 9"></div>
+                        <div class="gallery-photo"><img src="10.jpg" alt="עסקת תלמיד 10"></div>
+                        <div class="gallery-photo"><img src="11.jpg" alt="עסקת תלמיד 11"></div>
+                        <div class="gallery-photo"><img src="12.jpg" alt="עסקת תלמיד 12"></div>
+                        <div class="gallery-photo"><img src="13.jpg" alt="עסקת תלמיד 13"></div>
+                        <div class="gallery-photo"><img src="14.jpg" alt="עסקת תלמיד 14"></div>
+                        <div class="gallery-photo"><img src="15.jpg" alt="עסקת תלמיד 15"></div>
+                        <div class="gallery-photo"><img src="16.jpg" alt="עסקת תלמיד 16"></div>
+
+                    </div>
+                </div>
+                <!-- Pagination Dots -->
+                <div class="gallery-dots" id="galleryDots"></div>
+            </section>
+
+            <!-- Success Journey Section -->
+            <section id="success-journey" class="journey-section">
+                <div class="section-header">
+                    <h2 style="color: var(--accent-gold);">הדרך למקצוענות: מה שבאמת צריך כדי להצליח</h2>
+                    <p>זה לא קורה ביום אחד, אבל עם הדרך הנכונה - זה קורה.</p>
+                </div>
+
+                <div class="path-container">
+                    <!-- Step 1 -->
+                    <div class="path-step">
+                        <div class="step-icon"><i class="fas fa-globe-americas"></i></div>
+                        <div class="step-content">
+                            <span class="step-tag">שלב 1</span>
+                            <h4>הבנה מעמיקה של השוק</h4>
+                            <p>צלילה לעולם המאקרו והמיקרו, הבנת המכניקה שמאחורי הגרף. מי השחקנים הגדולים ואיך הכסף באמת
+                                זז.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="path-step">
+                        <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="step-content">
+                            <span class="step-tag">שלב 2</span>
+                            <h4>יסודות הניתוח הטכני</h4>
+                            <p>לימוד השפה של הגרף, הבנת פסיכולוגיית הסוחרים דרך נרות יפניים, תמיכה והתנגדות.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="path-step">
+                        <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="step-content">
+                            <span class="step-tag">שלב 3</span>
+                            <h4>סוד ה-Penny Stocks</h4>
+                            <p>למה מניות קטנות מתפוצצות במאות אחוזים? לימוד זיהוי המומנטום והמניפולציות של ה"כסף חכם".
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="path-step">
+                        <div class="step-icon"><i class="fas fa-microscope"></i></div>
+                        <div class="step-content">
+                            <span class="step-tag">שלב 4</span>
+                            <h4>ניתוח פנדמנטלי</h4>
+                            <p>מעבר להבנת הגרף - בדיקת חדשות והבנה של נתונים כלכליים ודיוק שלמניה יש עבר במומנטום חזק.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="path-step highlight">
+                        <div class="step-icon"><i class="fas fa-cube"></i></div>
+                        <div class="step-content">
+                            <span class="step-tag">שלב 5 - המודל שלי</span>
+                            <h4>מודל הקוביות</h4>
+                            <p>הבנה מעמיקה בגרף, איפה האזורים הקריטיים לפני שהמניה מתפוצצת למעלה וחוזק של מניה.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="path-step">
+                        <div class="step-icon"><i class="fas fa-tools"></i></div>
+                        <div class="step-content">
+                            <span class="step-tag">שלב 6</span>
+                            <h4>אסטרטגיות מסחר</h4>
+                            <p>פיתוח סט אסטרטגיות מסחר מגוונות המותאמות למצבי שוק משתנים ולאופי האישי שלך.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 7 -->
+                    <div class="path-step">
+                        <div class="step-icon"><i class="fas fa-user-shield"></i></div>
+                        <div class="step-content">
+                            <span class="step-tag">שלב 7</span>
+                            <h4>חשבון דמו</h4>
+                            <p>שנה של מסחר בחשבון דמו, בניית משמעת עצמית, לקיחת עסקאות על פי המודל והאסטרטגיות ותיעוד
+                                ביומן מסחר.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 8 -->
+                    <div class="path-step final">
+                        <div class="step-icon"><i class="fas fa-crown"></i></div>
+                        <div class="step-content">
+                            <span class="step-tag">היעד</span>
+                            <h4>חשבון מסחר אמיתי</h4>
+                            <p>אחרי שיישמת את כל השלבים ופיתחת כללים וחוקים ברורים, זה הזמן לעבור לתיק המסחר האמיתי
+                                ולהתחיל לייצר רווחים.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- Next Step Questionnaire Section -->
+            <section class="next-step-section" id="questionnaire">
+                <div class="section-header">
+                    <h2 style="color: #4ade80; font-size: 3rem; margin-bottom: 1rem;">רוצים לקחת את המסחר שלב אחד
+                        קדימה?</h2>
+                    <p style="color: #cbd5e1; font-size: 1.3rem; margin-bottom: 3rem;">ענו על כמה שאלות קצרות ונגלה
+                        מה הרמה שלכם ואיך אפשר להתקדם</p>
+                </div>
+
+                <div class="questionnaire-container" id="quizContainer">
+                    <!-- Step 1 -->
+                    <div class="quiz-step active" id="step1">
+                        <h3 class="quiz-question">1. כמה זמן את/ה כבר בתחום המסחר?</h3>
+                        <div class="options-list">
+                            <button class="option-btn" onclick="handleOptionClick(this, 1, 2)">
+                                <span class="option-circle"></span> פחות מחודש - אני ממש בהתחלה
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick(this, 1, 2)">
+                                <span class="option-circle"></span> 1 עד 6 חודשים - יש לי בסיס
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick(this, 1, 2)">
+                                <span class="option-circle"></span> מעל שנה - אני כבר מכיר את השוק
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="quiz-step" id="step2">
+                        <h3 class="quiz-question">2. האם יש לך ניסיון במסחר בפועל?</h3>
+                        <div class="options-list">
+                            <button class="option-btn" onclick="handleOptionClick(this, 2, 3)">
+                                <span class="option-circle"></span> כן, אני סוחר באופן פעיל
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick(this, 2, 3)">
+                                <span class="option-circle"></span> רק בחשבון דמו בינתיים
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick(this, 2, 3)">
+                                <span class="option-circle"></span> לא, אני רק לומד תיאוריה
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="quiz-step" id="step3">
+                        <h3 class="quiz-question">3. מה המטרה הכי חשובה לך כרגע?</h3>
+                        <div class="options-list">
+                            <button class="option-btn" onclick="handleOptionClick(this, 3, 4)">
+                                <span class="option-circle"></span> יצירת הכנסה נוספת מהצד
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick(this, 3, 4)">
+                                <span class="option-circle"></span> הפיכה לסוחר עצמאי במשרה מלאה
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick(this, 3, 4)">
+                                <span class="option-circle"></span> הבנת הבסיס וכללי הברזל בלבד
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="quiz-step" id="step4">
+                        <h3 class="quiz-question">4. האם יש לך שיטת מסחר עקבית?</h3>
+                        <div class="options-list">
+                            <button class="option-btn" onclick="handleOptionClick(this, 4, 'final')">
+                                <span class="option-circle"></span> יש לי שיטה אבל התוצאות לא יציבות
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick(this, 4, 'final')">
+                                <span class="option-circle"></span> אין לי שיטה, אני עובד לפי תחושה
+                            </button>
+                            <button class="option-btn" onclick="handleOptionClick(this, 4, 'final')">
+                                <span class="option-circle"></span> אני מחפש אסטרטגיה מנצחת
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Final Form -->
+                    <div class="final-form" id="finalForm">
+                        <h3 class="quiz-question" style="color: #4ade80; text-align: center;">השלב האחרון!</h3>
+                        <p style="color: #fff; margin-bottom: 2rem; font-size: 1.2rem; text-align: center;">נראה שאת/ה
+                            מוכן/ה לעלות שלב קדימה, השאר/י פרטים ונחזור אליך בהקדם.</p>
+                        <form id="quizLeadForm" onsubmit="handleQuizSubmit(event)">
+                            <div class="form-group">
+                                <input type="text" id="quizName" class="form-input" placeholder="שם מלא" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="quizPhone" class="form-input" placeholder="מספר טלפון" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="quizEmail" class="form-input" placeholder="כתובת מייל" required>
+                            </div>
+                            <div class="form-group"
+                                style="display: flex; align-items: center; gap: 8px; margin-bottom: 1.5rem; flex-direction: row-reverse; justify-content: flex-end;">
+                                <label for="privacyConsent" style="color: #fff; font-size: 0.9rem; margin: 0;">
+                                    אני מאשר/ת כי קראתי את <a href="privacy-policy.html" target="_blank"
+                                        style="color: #4ade80; text-decoration: underline; cursor: pointer;">מדיניות
+                                        הפרטיות</a> ומסכים/ה לשמירת הפרטים
+                                </label>
+                                <input type="checkbox" id="privacyConsent" required
+                                    style="width: 18px; height: 18px; cursor: pointer; flex-shrink: 0;">
+                            </div>
+                            <button type="submit" class="submit-quiz-btn">שלח/י פרטים ונחזור אליך בהקדם</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Success Modal -->
+            <div id="successModal"
+                style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; justify-content: center; align-items: center;">
+                <div
+                    style="background: white; border-radius: 20px; padding: 40px; max-width: 500px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.3); animation: modalSlideIn 0.3s ease;">
+                    <div style="font-size: 4rem; margin-bottom: 20px;">✅</div>
+                    <p style="color: #333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 10px;">
+                        <strong>הפנייה נשלחה בהצלחה!</strong>
+                    </p>
+                    <p style="color: #666; font-size: 1rem; line-height: 1.6; margin-bottom: 25px;">
+                        קיבלנו את הפרטים שלך.<br>
+                        נחזור אליך בקרוב! 🚀
+                    </p>
+                    <button onclick="closeSuccessModal()"
+                        style="background: linear-gradient(135deg, #4ade80, #22c55e); color: white; border: none; padding: 15px 40px; border-radius: 10px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: transform 0.3s;">
+                        אישור
+                    </button>
+                </div>
+            </div>
+
+            <style>
+                @keyframes modalSlideIn {
+                    from {
+                        transform: translateY(-50px);
+                        opacity: 0;
+                    }
+
+                    to {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+
+                .mini-cta-btn:hover {
+                    background: var(--accent-gold-light) !important;
+                    transform: scale(1.05) translateY(-2px);
+                    box-shadow: 0 0 25px rgba(197, 160, 89, 0.6);
+                    filter: brightness(1.1);
+                }
+            </style>
+
+            <!-- FAQ Section -->
+            <section class="faq-section" id="faq-section">
+                <div class="faq-container">
+                    <div class="faq-title">
+                        <h2>שאלות ותשובות</h2>
+                        <p>כל מה שחשוב לדעת על מסחר במניות פני סטוקס ושוק ההון</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>מה זה בעצם מניות פני סטוקס (Penny Stocks)?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>מניות פני סטוקס הן מניות של חברות קטנות הנסחרות במחיר נמוך (לרוב מתחת ל-5$). הייחודיות
+                                שלהן היא תנודתיות קיצונית – הן מסוגלות לזנק בעשרות ואף מאות אחוזים ביום אחד. בשונה
+                                ממניות ענק, הפוטנציאל לתנועה חדה מאפשר גם לסוחרים עם הון התחלתי נמוך לייצר תשואות
+                                משמעותיות. המניות הללו נסחרות בבורסות הגדולות והמובילות בעולם, כמו ניו יורק (NYSE)
+                                ונאסד"ק, והן מאופיינות בתנודות חריפות המייצרות הזדמנויות מסחר דינמיות ומהירות.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>תוך כמה זמן אוכל לראות תוצאות מהמסחר?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>מסחר הוא מקצוע לכל דבר ועניין. הכל תלוי בך, ברמת ההשקעה וביכולת הלמידה שלך. אנחנו ממליצים
+                                להסתכל על טווח זמן של לפחות שנה קדימה של למידה והתמדה כדי שהמקצוע הזה באמת "ייטמע"
+                                ותתחיל לראות תוצאות עקביות.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>האם הליווי הוא אישי או קבוצתי?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>אני מציע ליווי אישי וממוקד במתכונת של אחד על אחד, המותאם בדיוק לקצב ההתקדמות שלך. את
+                                המפגשים ניתן לקיים באופן פרונטלי או דרך הזום, לבחירתך ובגמישות מלאה בהתאם ללוח הזמנים
+                                האישי שלך.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>מה אם אין לי זמן למפגשים אישיים?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>כדי להשלים את המעטפת המקצועית, בקרוב יושק באתר קורס דיגיטלי מקיף המיועד למי שמעוניין
+                                ללמוד מסחר בקצב האישי שלו. מומלץ לעקוב אחר העדכונים באתר לגבי מועד ההשקה והפרטים המלאים.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>האם אני חייב לדעת מתמטיקה ברמה גבוהה?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>חד-משמעית לא. למסחר אין קשר למתמטיקה מורכבת או לנוסחאות מסובכות. בתוכנית הליווי אנו
+                                מתמקדים בליבה של עולם המסחר: קריאת גרפים ברמה מקצועית והבנת אסטרטגיות עבודה פרקטיות. אם
+                                אתם שולטים בפעולות חשבון בסיסיות, יש לכם את כל הבסיס המספרי הנדרש כדי לנתח עסקאות ולנהל
+                                אותן בהצלחה.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>למה יומן המסחר כל כך חשוב להצלחה שלי?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>יומן המסחר הוא המראה הכי אמיתית שלכם בשוק. הוא הכלי הקריטי ביותר שבודק ומדייק אתכם בלי
+                                סיפורים ובלי תירוצים. היומן משקף לכם כל טעות והצלחה בצורה שקופה, ומאפשר לכם להפיק לקחים
+                                מכל עסקה ולהשתפר בביצועים שלכם בכל יום מחדש.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>האם אפשר לסחור דרך הטלפון הנייד?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>אני ממליץ לתלמידים שלי לסחור אך ורק דרך המחשב ולא להתפתות למסחר מהטלפון. למרות שזה נראה
+                                זמין ונוח, מסחר מהנייד פשוט לא מקצועי; הוא לא מאפשר את הדיוק, את מהירות התגובה או את
+                                הכלים הנדרשים כדי לעבוד ברצינות. כדי לייצר רווחים לאורך זמן, אתם צריכים עמדת עבודה
+                                שמאפשרת לכם לראות את התמונה המלאה ולפעול בזמן אמת בלי מגבלות.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>האם המסחר מתאים למי שעובד במשרה מלאה?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>בואו נדבר תכלס: המטרה במסחר היא קודם כל לייצר לעצמכם ביטחון כלכלי. אני לא מכוון אתכם
+                                לעזוב את מקום העבודה שלכם מחר בבוקר, אלא לבנות לעצמכם מקור הכנסה נוסף כדי שלא תהיו
+                                תלויים רק במשכורת אחת. היתרון הגדול במניות פני סטוקס הוא שניתן למצוא בהן תנועה לאורך כל
+                                שעות היום – מה שמאפשר לכם לנהל את המסחר כעבודה נוספת בשעות שנוחות לכם, בלי לפגוע בשגרה
+                                שלכם ותוך כדי שאתם בונים לעצמכם רשת ביטחון כלכלית אמיתית.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>האם יש סיכונים במסחר במניות קטנות?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>בכל השקעה בחיים יש סיכון, אבל המטרה שלנו היא לעבוד חכם. מסחר הוא לא הימור אנחנו פועלים עם
+                                ניהול סיכונים קפדני, אסטרטגיות מסחר סדורות ומודלים שעובדים על בסיס סטטיסטיקה מוכחת.
+                                המטרה היא לייצר עבורכם יתרון סטטיסטי בשוק עם אחוז הצלחה גבוהה שיאפשר לתיק מסחר שלכם
+                                לגדול ולצמוח לאורך זמן.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>מה ההבדל בין המסחר הזה למסחר במניות גדולות כמו אפל או טסלה?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>בואו נסתכל רגע על המספרים: עם תיק מסחר קטן של 100 דולר בלבד, אתם יכולים לקנות 100 מניות
+                                במחיר של דולר אחד למניה. אם המניה עלתה ל-2 דולרים הכפלתם את ההשקעה שלכם (100% רווח).
+                                לעומת זאת, במניות גדולות שכל מניה שלהן 200 דולר למניה, כדי לקנות כמות זהה של 100 מניות
+                                תצטרכו תיק מסחר גדול של 20,000 דולר. זהו חסם הכניסה העיקרי של סוחרים בתחילת הדרך, וזאת
+                                הסיבה שמסחר בפני סטוקס הוא המקום האידיאלי למי שרוצה להגדיל תיק מסחר קטן בצורה משמעותית
+                                עם תיק מסחר קטן</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="aboutPage" style="display:none; padding-top: 150px;">
+            <section>
+                <div class="about-container">
+                    <div class="about-image">
+                        <div class="profile-frame">
+                            <img src="1244.png" alt="S-Trader Mentor" style="width: 100%; border-radius: 10px;">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h2 style="font-size: 2.5rem; margin-top: 1rem; color: var(--accent-gold);">הסיפור שלי: מהימורים
+                            למקצוענות</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                            <strong>שמעון שוקרון (26),</strong> סוחר המתמחה בבורסה האמריקאית ומייסד S-Trader.
+                        </p>
+                        <p style="font-size: 1.05rem; line-height: 1.8;">
+                            המסע שלי לא התחיל ברווחים קלים. הוא התחיל בדרך הקשה – הפסדים כבדים, לילות ללא שינה וכמעט
+                            70,000 ש"ח שנמחקו בגלל "תבניות טכניות" שכולם מלמדים ושימוש במניות גדולות שדורשות הון עצמי
+                            עצום. הבנתי שחסר לי משהו שרוב הסוחרים מתעלמים ממנו: <strong>משמעת סטטיסטית וכלים שמתאימים
+                                לסוחר המתחיל.</strong>
+                        </p>
+                        <p style="font-size: 1.05rem; line-height: 1.8;">
+                            התפנית הגיעה כשעברתי ל-<strong>Penny Stocks</strong>. שם פיתחתי מודלים מבוססי זיהוי
+                            מניפולציות שוק וניהול סיכונים קפדני. ב-S-Trader אני לא מלמד תיאוריה; אני מלמד את האסטרטגיות
+                            שפיתחתי מהשטח, אלו שמאפשרות לסחור עם חשבון קטן ולהשיג תוצאות מקצועיות באמת.
+                        </p>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section style="padding: 0 10% 5rem;">
+                <div class="student-gallery">
+                    <div class="gallery-photo">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=400&auto=format&fit=crop"
+                            alt="Student 1">
+                        <div class="photo-overlay">מפגש זום קבוצתי</div>
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=400&auto=format&fit=crop"
+                            alt="Student 2">
+                        <div class="photo-overlay">ליווי אישי 1-על-1</div>
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=400&auto=format&fit=crop"
+                            alt="Student 3">
+                        <div class="photo-overlay">סדנה מעשית</div>
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=400&auto=format&fit=crop"
+                            alt="Student 4">
+                        <div class="photo-overlay">קהילת הסוחרים בלייב</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About CTA -->
+            <section style="padding: 0 10%; margin-bottom: 100px;">
+                <div class="about-cta">
+                    <h2 style="margin-bottom: 1rem;">רוצה לסחור איתי באותה השפה?</h2>
+                    <p style="color: var(--text-gray); margin-bottom: 2rem;">בוא נתחיל מהצעד הראשון – הורד את יומן המסחר
+                        המקצועי שלי ותתחיל לתעד את ההצלחה שלך.</p>
+                    <div style="display: flex; gap: 1.5rem; justify-content: center;">
+                        <button class="cta-btn" onclick="showPage('journals')">הורד את היומן</button>
+                        <button class="cta-btn" onclick="showPage('contact')"
+                            style="background: transparent; border: 1px solid var(--accent-gold); color: var(--accent-gold);">קבע
+                            שיחת אבחון</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+        <!-- Courses & Mentorship Page -->
+        <div id="coursesPage" style="display:none; padding-top: 100px;">
+            <header class="hero courses-hero">
+                <div class="hero-content">
+                    <h1 style="font-size: 4rem; margin-bottom: 1.5rem;">התחום הכי חם בוול סטריט</h1>
+                    <p
+                        style="max-width: 800px; margin: 0 auto 2.5rem; font-size: 1.4rem; line-height: 1.7; font-weight: 700; color: #fff;">
+                        תוכנית
+                        ההכשרה המקיפה ביותר למסחר בשוק ההון, המשלבת
+                        ידע תיאורטי מעמיק, פרקטיקה בשוק חי וליווי אישי עד להצלחה.</p>
+                    <a href="javascript:void(0)" class="cta-btn glow-effect premium-courses-btn"
+                        onclick="scrollToSection('questionnaire')">
+                        <span>לקבלת פרטים נוספים לגבי ההכשרה</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+            </header>
+
+            <section class="syllabus-intro" style="padding: 60px 10% 20px; text-align: center;">
+                <div class="section-header">
+                    <h2 style="font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 1.5rem;">הדרך שלך למקצוענות
+                        מתחילה כאן</h2>
+                    <p
+                        style="font-size: 1.3rem; color: #fff; line-height: 1.9; max-width: 950px; margin: 0 auto; font-weight: 500;">
+                        כדי להפוך לסוחר מקצועי בבורסה האמריקאית ובכלל במסחר בשוק ההון,
+                        <strong style="color: var(--accent-gold);">בניתי מודל שלם ודרך פעולה מוכחת</strong> שמביאה אותך
+                        <strong style="color: var(--accent-gold);">מאפס ידע לרמה של סוחר מקצועי</strong>,
+                        עם יתרון אמיתי על רוב הסוחרים בשוק.
+                    </p>
+                    <p
+                        style="font-size: 1.2rem; color: var(--text-gray); line-height: 1.8; max-width: 900px; margin: 1.5rem auto 0; font-weight: 400;">
+                        מצורפת למטה הטבלה המלאה של <strong style="color: #fff;">"המודל לסוחר"</strong>,
+                        המציגה בדיוק איך ניתן לעשות זאת שלב אחר שלב,
+                        מהיסודות ועד לאסטרטגיות המתקדמות ביותר שאני משתמש בהן כל יום.
+                        <strong
+                            style="color: var(--accent-gold); display: block; margin-top: 1rem; font-size: 1.25rem;">
+                            ואת זה אני מלמד בתוכנית ההכשרה שלי, בליווי מלא אחד על אחד, עד ההצלחה.
+                        </strong>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Mentorship Features -->
+
+            <!-- Full Width Syllabus Section -->
+            <section id="materials-section"
+                style="padding: 60px 2%; background: var(--primary-dark); border-top: 1px solid var(--glass-border);">
+                <!-- New Syllabus Display - Image Style - Full Width -->
+                <div class="syllabus-premium-container">
+                    <div class="syllabus-main-title">
+                        <span class="title-line-1">המודל לסוחר</span>
+                        <span class="title-line-2">המתחיל</span>
+                    </div>
+
+                    <div class="syllabus-grid-custom">
+                        <!-- עמודה ימנית: יסודות ואסטרטגיות -->
+                        <div class="syllabus-column">
+                            <div class="syllabus-topic">
+                                <h4>1. יסודות</h4>
+                                <ul>
+                                    <li>מבוא מורחב לשוק ההון</li>
+                                    <li>מאקרו כלכלה ומושגי יסוד</li>
+                                    <li>חוקים וכללים</li>
+                                    <li>שעת הבורסה</li>
+                                    <li>ניתוח טכני מקצועי</li>
+                                    <li>פלטפורמות מסחר</li>
+                                </ul>
+                            </div>
+                            <div class="syllabus-topic">
+                                <h4>2. אסטרטגיות</h4>
+                                <ul>
+                                    <li>ממוצע V-WAP</li>
+                                    <li>Time + Sales</li>
+                                    <li>חשבון דמו למסחר!</li>
+                                    <li>שיטת ההתכנסויות</li>
+                                    <li>4 אסטרטגיות מובילות</li>
+                                    <li>תנאי שוק משתנים</li>
+                                    <li>טווחי זמן בשווקים</li>
+                                    <li>ניהול פוזיציה</li>
+                                    <li>ניהול סיכונים</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- עמודה מרכזית: עמודי התווך -->
+                        <div class="syllabus-column center-column">
+                            <div class="pillars-section-center">
+                                <div class="star-container">
+                                    <div class="star-glow"></div>
+                                    <div class="pillar-item p-top">אימון</div>
+                                    <div class="pillar-item p-bottom">מנטליות</div>
+                                    <div class="pillar-item p-right">שיטה</div>
+                                    <div class="pillar-item p-left">הצלחה</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- עמודה שמאלית: LEVEL UP, פני סטוקס ופונדמנטלי -->
+                        <div class="syllabus-column">
+                            <div class="syllabus-topic highlight-topic">
+                                <h4>3. LEVEL UP</h4>
+                                <ul>
+                                    <li>איך לייצר יתרון על שאר הסוחרים</li>
+                                    <li>שעה של מסחר ביום</li>
+                                    <li>לא לסחור בכל יום</li>
+                                    <li>להתחיל מהון עצמי נמוך</li>
+                                    <li>הגדלת תיק קטן</li>
+                                    <li>שיטת המסחר הבלעדית!</li>
+                                </ul>
+                            </div>
+                            <div class="syllabus-topic">
+                                <h4>4. תורת הפני סטוקס</h4>
+                                <ul>
+                                    <li>מודל pro - שיטת הקוביות</li>
+                                    <li>תיקיית גרפים סודית</li>
+                                    <li>שעות מסחר אטרקטיביות</li>
+                                </ul>
+                            </div>
+                            <div class="syllabus-topic">
+                                <h4>5. פונדמנטלי</h4>
+                                <ul>
+                                    <li>ניתוח פונדמנטלי</li>
+                                    <li>לזהות התפוצצות של מניה</li>
+                                    <li>לעשות כסף מכאב של משקיעים</li>
+                                    <li>לתרגם חדשות לכסף</li>
+                                    <li>תופעות פסיכולוגיות</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Student Photos Section (Moved here) -->
+            <section id="student-photos-section">
+                <div class="section-header">
+                    <h2>חלק מהתלמידים בהכשרה שלנו</h2>
+                    <p>הצצה לרגעים מההכשרות, הליווי האישי והקהילה שלנו בפעולה.</p>
+                </div>
+                <div class="slider-container">
+                    <button class="gallery-arrow prev" onclick="scrollGallery('photosGallery', -1)"><i
+                            class="fas fa-chevron-right"></i></button>
+                    <button class="gallery-arrow next" onclick="scrollGallery('photosGallery', 1)"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <div class="student-gallery" id="photosGallery">
+                        <!-- Student photos will be loaded here from the server/folder -->
+                        <div class="gallery-photo"><img src="s1.jpg" alt=""></div>
+                        <div class="gallery-photo"><img src="s2.jpg" alt=""></div>
+                        <div class="gallery-photo"><img src="s3.jpg" alt=""></div>
+                        <div class="gallery-photo"><img src="s4.jpg" alt=""></div>
+                        <div class="gallery-photo"><img src="s5.jpg" alt=""></div>
+                        <div class="gallery-photo"><img src="s6.jpeg" alt=""></div>
+                        <div class="gallery-photo"><img src="s7.jpg" alt=""></div>
+                        <div class="gallery-photo"><img src="s8.jpeg" alt=""></div>
+                        <div class="gallery-photo"><img src="s9.jpg" alt=""></div>
+                        <div class="gallery-photo"><img src="s10.jpg" alt=""></div>
+                        <div class="gallery-photo"><img src="s11.jpg" alt=""></div>
+                        <div class="gallery-photo"><img src="s12.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="gallery-dots" id="photoGalleryDots"></div>
+            </section>
+
+            <!-- Mentorship Features -->
+            <section class="features-section" style="background: rgba(255,255,255,0.02); padding: 80px 10%;">
+                <div class="section-header">
+                    <h2>הליווי שיקח אותך קדימה</h2>
+                    <p
+                        style="max-width: 850px; margin: 1.5rem auto; font-size: 1.15rem; line-height: 1.8; color: var(--text-gray);">
+                        דקה לפני שאתה מקבל החלטה אם זה מתאים לך או לא, חשוב להבין,
+                        <strong style="color: #fff;">מסחר בבורסה האמריקאית (ובכלל) הוא מקצוע לכל דבר ועניין.</strong>
+                        אני נותן לך <strong style="color: var(--accent-gold);">ארגז כלים מלא</strong> כדי להימנע
+                        מהטעויות שאני עשיתי בתחילת הדרך.
+                        בליווי הצמוד שלי אתה מקבל את כל המעטפת הנדרשת כדי להצליח,
+                        אבל זכור: <strong style="color: var(--accent-gold);">התמדה וסבלנות הם אלו שיגרמו לך להצליח
+                            באמת.</strong>
+                    </p>
+                </div>
+                <div class="courses-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem;">
+
+                    <!-- Mentorship Card -->
+                    <div class="download-card" style="text-align: right; align-items: flex-start;">
+                        <div class="platform-icon" style="margin: 0 auto;"><i class="fas fa-handshake"></i></div>
+                        <h3 style="color: var(--accent-gold);">תוכנית ההכשרה | ליווי אישי 1-על-1</h3>
+                        <p
+                            style="font-size: 1.05rem; margin-bottom: 0.5rem; line-height: 1.6; color: var(--text-gray);">
+                            8 מפגשים | שעתיים כל מפגש | פעם בשבוע | פרונטלי או זום
+                        </p>
+
+
+                        <ul style="color: var(--text-gray); margin-bottom: 2rem; list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check"
+                                    style="color: var(--accent-gold); margin-left: 10px;"></i>
+                                <strong style="color: #fff;">מאפס ידע למאה</strong> – עד רמה של מסחר לבד
+                            </li>
+                            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check"
+                                    style="color: var(--accent-gold); margin-left: 10px;"></i>
+                                התמחות במניות <strong style="color: #fff;">פני סטוקס</strong></li>
+                            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check"
+                                    style="color: var(--accent-gold); margin-left: 10px;"></i>
+                                כניסה לקהילת הסוחרים שלנו (VIP)</li>
+                            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check"
+                                    style="color: var(--accent-gold); margin-left: 10px;"></i>
+                                כניסה לקהילה הכללית – עדכוני חדשות בשוק ההון</li>
+                            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check"
+                                    style="color: var(--accent-gold); margin-left: 10px;"></i>
+                                מענה 24/6 בוואטסאפ + קבוצה אישית לשאלות</li>
+                        </ul>
+                        <button class="cta-btn" style="width: 100%;" onclick="scrollToSection('questionnaire')">לפרטים
+                            על ליווי אישי</button>
+                    </div>
+
+                    <!-- Digital Course Card -->
+                    <div class="download-card"
+                        style="text-align: center; align-items: center; justify-content: center; min-height: 400px;">
+                        <div class="platform-icon" style="margin: 0 auto;"><i class="fas fa-play-circle"></i></div>
+                        <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">הקורס הדיגיטלי המלא</h3>
+                        <p style="font-size: 2rem; font-weight: 700; color: var(--accent-gold); margin: 0;">בקרוב</p>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <div style="display: none;">
+                <!-- Hidden section -->
+
+                <!-- זה בשבילך אם -->
+                <div
+                    style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.02) 100%); padding: 2.5rem; border-radius: 15px; border: 1px solid rgba(34, 197, 94, 0.3);">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2rem;">
+                        <i class="fas fa-check-circle" style="font-size: 2.5rem; color: #22c55e;"></i>
+                        <h3 style="color: #22c55e; margin: 0; font-size: 1.8rem;">זה בשבילך אם...</h3>
+                    </div>
+                    <ul
+                        style="list-style: none; padding: 0; color: var(--text-gray); font-size: 1.1rem; line-height: 2;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 10px;">
+                            <i class="fas fa-check" style="color: #22c55e; margin-top: 5px; flex-shrink: 0;"></i>
+                            <span>אתה <strong style="color: #fff;">רציני</strong> לגבי למידת מסחר ומוכן להשקיע זמן
+                                ומאמץ</span>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 10px;">
+                            <i class="fas fa-check" style="color: #22c55e; margin-top: 5px; flex-shrink: 0;"></i>
+                            <span>אתה מחפש <strong style="color: #fff;">ליווי אישי</strong> ולא סתם קורס
+                                מוקלט</span>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 10px;">
+                            <i class="fas fa-check" style="color: #22c55e; margin-top: 5px; flex-shrink: 0;"></i>
+                            <span>אתה מבין שהצלחה במסחר דורשת <strong style="color: #fff;">התמדה
+                                    וסבלנות</strong></span>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 10px;">
+                            <i class="fas fa-check" style="color: #22c55e; margin-top: 5px; flex-shrink: 0;"></i>
+                            <span>אתה רוצה ללמוד <strong style="color: #fff;">נכון מההתחלה</strong> ולהימנע מטעויות
+                                יקרות</span>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 10px;">
+                            <i class="fas fa-check" style="color: #22c55e; margin-top: 5px; flex-shrink: 0;"></i>
+                            <span>אתה מחפש <strong style="color: #fff;">מנטור אמיתי</strong> שיהיה איתך עד
+                                ההצלחה</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- זה לא בשבילך אם -->
+                <div
+                    style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0.02) 100%); padding: 2.5rem; border-radius: 15px; border: 1px solid rgba(239, 68, 68, 0.3);">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2rem;">
+                        <i class="fas fa-times-circle" style="font-size: 2.5rem; color: #ef4444;"></i>
+                        <h3 style="color: #ef4444; margin: 0; font-size: 1.8rem;">זה לא בשבילך אם...</h3>
+                    </div>
+                    <ul
+                        style="list-style: none; padding: 0; color: var(--text-gray); font-size: 1.1rem; line-height: 2;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 10px;">
+                            <i class="fas fa-times" style="color: #ef4444; margin-top: 5px; flex-shrink: 0;"></i>
+                            <span>אתה מחפש <strong style="color: #fff;">"הצלחה מהירה"</strong> או "להתעשר בן
+                                לילה"</span>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 10px;">
+                            <i class="fas fa-times" style="color: #ef4444; margin-top: 5px; flex-shrink: 0;"></i>
+                            <span>אתה לא מוכן <strong style="color: #fff;">להשקיע זמן</strong> בלימוד ותרגול</span>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 10px;">
+                            <i class="fas fa-times" style="color: #ef4444; margin-top: 5px; flex-shrink: 0;"></i>
+                            <span>אתה מצפה ל<strong style="color: #fff;">"נוסחת קסם"</strong> שתעבוד בלי מאמץ</span>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 10px;">
+                            <i class="fas fa-times" style="color: #ef4444; margin-top: 5px; flex-shrink: 0;"></i>
+                            <span>אתה לא מוכן <strong style="color: #fff;">לקבל ביקורת</strong> ולתקן טעויות</span>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 10px;">
+                            <i class="fas fa-times" style="color: #ef4444; margin-top: 5px; flex-shrink: 0;"></i>
+                            <span>אתה רוצה <strong style="color: #fff;">קורס זול</strong> במקום ליווי אמיתי</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            </section>
+        </div>
+
+
+        <!-- Journals Page (The new Main Content Page) -->
+        <div id="journalsPage" style="display:none;">
+            <header class="hero"
+                style="background: linear-gradient(135deg, rgba(13, 27, 42, 0.95) 0%, rgba(27, 38, 59, 0.92) 100%), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80') center/cover; position: relative; min-height: 600px; display: flex; align-items: center; justify-content: center;">
+                <div class="hero-content"
+                    style="text-align: center; max-width: 900px; margin: 0 auto; padding: 60px 20px;">
+                    <h1
+                        style="font-size: 3.5rem; font-weight: 800; margin-bottom: 1.5rem; line-height: 1.2; text-shadow: 2px 2px 20px rgba(0,0,0,0.5);">
+                        <span style="color: #fff;">מאסטר בשוק ההון עם </span>
+                        <span style="color: var(--accent-gold); text-shadow: 0 0 30px rgba(197, 160, 89, 0.5);">הכלים
+                            הנכונים</span>
+                    </h1>
+                    <p
+                        style="font-size: 1.4rem; line-height: 1.8; margin-bottom: 2.5rem; color: var(--text-gray); max-width: 750px; margin-left: auto; margin-right: auto; font-weight: 400;">
+                        יומן המסחר המקצועי ביותר בישראל, <strong style="color: #fff;">עכשיו להורדה בחינם</strong>.
+                        עקוב אחר הביצועים שלך ושפר את <strong style="color: var(--accent-gold);">אסטרטגיית המסחר
+                            שלך</strong> בכל יום.
+                    </p>
+                    <a href="javascript:void(0)" class="cta-btn" onclick="scrollToSection('app-downloads')"
+                        style="display: inline-block; padding: 18px 45px; font-size: 1.3rem; font-weight: 700; background: linear-gradient(135deg, var(--accent-gold) 0%, #d4a574 100%); color: #0d1b2a; border-radius: 50px; text-decoration: none; box-shadow: 0 10px 40px rgba(197, 160, 89, 0.4); transition: all 0.3s ease; border: 2px solid var(--accent-gold);">
+                        <i class="fas fa-download" style="margin-left: 10px;"></i>
+                        להורדת יומן מסחר בחינם
+                    </a>
+                </div>
+            </header>
+
+            <!-- Trust Bar Section -->
+            <div class="trust-bar">
+                <div class="stat-item">
+                    <h4>+100</h4>
+                    <p>סוחרים פעילים</p>
+                </div>
+                <div class="stat-item">
+                    <h4>+5 שנים</h4>
+                    <p>ניסיון בשוק</p>
+                </div>
+                <div class="stat-item">
+                    <h4>85%</h4>
+                    <p>שיפור בעקביות</p>
+                </div>
+                <div class="stat-item">
+                    <h4>24/6</h4>
+                    <p>תמיכה בקהילה</p>
+                </div>
+            </div>
+
+            <!-- Feature Showcase Section -->
+            <section class="features-section">
+                <div class="features-container">
+                    <div class="features-image" style="perspective: 1000px;">
+                        <img id="featureShowcaseImg" src="journal_app.png" alt="Trading Journal App Showcase"
+                            style="transform: rotateY(-10deg) rotateX(5deg); transition: all 0.5s ease; filter: drop-shadow(0 30px 60px rgba(0,0,0,0.8)); image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
+
+                        <!-- Floating Badges for App Emphasis -->
+                        <div class="app-badge"
+                            style="position: absolute; bottom: -20px; right: -20px; background: var(--secondary-dark); border: 1px solid var(--accent-gold); padding: 15px 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 5;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-mobile-alt" style="color: var(--accent-gold); font-size: 1.5rem;"></i>
+                                <div style="text-align: right;">
+                                    <span style="display: block; font-size: 0.7rem; color: var(--text-gray);">זמין
+                                        ב-</span>
+                                    <span style="display: block; font-size: 0.9rem; font-weight: 800; color: #fff;">כל
+                                        המכשירים</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-content">
+                        <h2 style="font-size: 2.8rem; margin-bottom: 1.5rem;">הכלי שיהפוך אותך ל<span
+                                style="color: var(--accent-gold);">סוחר רווחי</span></h2>
+                        <p style="color: var(--text-gray); margin-bottom: 2.5rem; font-size: 1.2rem; line-height: 1.8;">
+                            יומן מסחר הוא הרבה מעבר לטבלת נתונים יבשה או רשימת עסקאות, הוא הכלי היחיד שמשקף לך את האמת
+                            הפשוטה על הדרך שבה אתה פועל בשוק ונותן לך תמונת מראה של הביצועים שלך, ואיך להשתפר ולהיות
+                            סוחר טוב יותר.
+                        </p>
+
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                                <div class="feature-text">
+                                    <h4>ניתוח סטטיסטי אוטומטי</h4>
+                                    <p>המערכת מנתחת כל עסקה שעשיתם ומציגה לכם אחוזי הצלחה בעסקאות, כמה רווח על התיק,
+                                        תמונת מצב מדויקת. אל תסתמכו על מזל תנו למספרים להוביל אתכם לדייק אותכם ולהפוך
+                                        אותכם לסוחרים טובים יותר.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+                                <div class="feature-text">
+                                    <h4>מעקב ושיפור ביצועים</h4>
+                                    <p>עקוב אחר ההתקדמות שלך לאורך זמן במסחר, זהה דפוסים חוזרים וטעויות לאורך הדרך, תראה
+                                        איזה שעות הכי חזקות אצלך ובאיזה ימים אתה הכי רווחי.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                                <div class="feature-text">
+                                    <h4>ניהול ומעקב מנטלי</h4>
+                                    <p>תלמדו לזהות את ה"טריגרים" שגורמים לכם לטעות. תעקבו אחרי המצב המנטלי שלכם ותהפכו
+                                        את המשמעת ליתרון הכי גדול שלכם בשוק.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <div class="section-header">
+                    <h2>שאלות ותשובות</h2>
+                    <p>כל מה שרצית לדעת על יומן המסחר S Trader</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>האם האפליקציה מתאימה לסוחרים בתחילת הדרך?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            בהחלט. יומן מסחר נבנה בממשק פשוט ואינטואיטיבי. דווקא סוחרים מתחילים חייבים להשתמש ביומן כדי
+                            למנוע טעויות יקרות ולבנות משמעת עצמית מהיום הראשון בשוק.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>האם אני צריך להזין נתונים בטבלאות אקסל מסורבלות?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            ממש לא. עברנו מהעידן הישן לאפליקציה חכמה. הממשק מאפשר הזנה מהירה של עסקאות, כשהמערכת מחשבת
+                            עבורכם באופן אוטומטי את אחוזי ההצלחה, הרווח הממוצע, והנתונים הסטטיסטיים שלכם.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>באילו מכשירים ניתן להשתמש ביומן המסחר?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            האפליקציה זמינה וקלה לשימוש בכל המכשירים - ממחשב ה-PC ועד לסמארטפון (אנדרואיד/אייפון)
+                            וטאבלט. כך תוכלו לעקוב ולתעד כל עסקה בזמן אמת, גם כשאתם לא מול המסכים.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>איך היומן עוזר לי להיות סוחר טוב יותר בפועל?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            היומן נותן לך "תמונת מראה". הוא מזהה עבורך באילו ימים ושעות אתה הכי רווחי, אילו סטאפים
+                            עובדים לך הכי טוב, ואיפה הטעויות המנטליות החוזרות שלך (כמו כניסה מוקדמת מדי או פחד). ברגע
+                            שיש לך נתונים, אפשר לתקן ולהשתפר.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>לאיזה נישה של סוחרים יומן המסחר מתאים?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            יומן המסחר נבנה כדי לתת מענה לכל סוגי הסוחרים. במסך ההתחברות (Login), ניתן לבחור בין ממשק
+                            ייעודי לסוחרי חוזים עתידיים לבין יומן המותאם לסוחרי מניות, סחורות (זהב), מט"ח וקריפטו. לכל
+                            נישה הותאמו המדדים והסטטיסטיקות הרלוונטיים עבורה.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>האם יש הדרכה על אופן השימוש ביומן?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            כן, יש למטה קישור לערוץ היוטיוב שלי שם תמצאו סרטונים והסבר על אופן השימוש ביומן מסחר.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MERGED DOWNLOAD CENTER CONTENT -->
+            <div id="app-downloads" class="section-header" style="padding-top: 100px;">
+                <h2>מרכז הורדות וגישה ליומן</h2>
+                <p>התקן את אפליקציית S-Trader בכל המכשירים שלך לגישה מהירה ומעקב רצוף</p>
+            </div>
+
+            <div class="download-grid">
+                <!-- Windows Card -->
+                <div class="download-card">
+                    <div>
+                        <div class="platform-icon"><i class="fab fa-windows"></i></div>
+                        <h3>גרסת Windows</h3>
+                        <p>הורד את האפליקציה הרשמית מחנות Microsoft למחשב האישי שלך.</p>
+                    </div>
+                    <a href="STrader.exe" download class="download-btn"
+                        style="margin-top: 0.5rem; display: inline-block; width: auto; padding: 0.7rem 1.3rem;">הורדה
+                        ל-Windows</a>
+                </div>
+
+                <!-- Android Card -->
+                <div class="download-card">
+                    <div>
+                        <div class="platform-icon"><i class="fab fa-google-play"></i></div>
+                        <h3>גרסת Android</h3>
+                        <p>האפליקציה המלאה למכשירי אנדרואיד זמינה להורדה ב-Google Play.</p>
+                    </div>
+                    <a href="#" class="download-btn"
+                        style="margin-top: 0.5rem; display: inline-block; width: auto; padding: 0.7rem 1.3rem;">הורדה
+                        מהחנות</a>
+                </div>
+
+                <!-- iPhone/iOS Card -->
+                <div class="download-card">
+                    <div>
+                        <div class="platform-icon"><i class="fab fa-apple"></i></div>
+                        <h3>גרסת iPhone / iOS</h3>
+                        <p>הורדת אפליקציית PWA למכשיר האייפון שלך בלחיצת כפתור.</p>
+                    </div>
+                    <div>
+                        <button class="instruction-toggle" onclick="toggleInstructions('ios-info')"
+                            style="margin-top: 1.5rem;">איך מתקינים באייפון?</button>
+                        <div id="ios-info" class="pwa-info">
+                            <h5>מדריך התקנה מהיר:</h5>
+                            <ul style="padding: 0; margin-top: 10px;">
+                                <li><i class="fas fa-arrow-left"></i> פתח את האתר בדפדפן Safari באייפון.</li>
+                                <li><i class="fas fa-arrow-left"></i> לחץ על כפתור ה"שיתוף" (Share) בתחתית המסך.</li>
+                                <li><i class="fas fa-arrow-left"></i> גלול למטה ובחר ב"הוספה למסך הבית" (Add to Home
+                                    Screen).</li>
+                                <li><i class="fas fa-arrow-left"></i> לחץ על "הוספה" (Add) בפינה העליונה והאפליקציה
+                                    תתווסף למסך הבית.</li>
+                            </ul>
+                        </div>
+                        <button class="download-btn" onclick="toggleInstructions('ios-info')"
+                            style="margin-top: 0.5rem;">הורדה ל-iPhone</button>
+                    </div>
+                </div>
+
+                <!-- Mac/MacBook Card -->
+                <div class="download-card">
+                    <div>
+                        <div class="platform-icon"><i class="fas fa-laptop"></i></div>
+                        <h3>גרסת Mac / MacBook</h3>
+                        <p>אפליקציית שולחן עבודה מותאמת למחשבי Apple מבוססת PWA.</p>
+                    </div>
+                    <div>
+                        <button class="instruction-toggle" onclick="toggleInstructions('mac-info')"
+                            style="margin-top: 1.5rem;">איך מתקינים ב-Mac?</button>
+                        <div id="mac-info" class="pwa-info">
+                            <h5>מדריך התקנה ל-Mac:</h5>
+                            <ul style="padding: 0; margin-top: 10px;">
+                                <li><i class="fas fa-arrow-left"></i> פתח את האתר בדפדפן Chrome או Edge במחשב ה-Mac.
+                                </li>
+                                <li><i class="fas fa-arrow-left"></i> לחץ על סמל ההתקנה (אייקון של מחשב עם חץ למטה) בצד
+                                    ימין של שורת הכתובת.</li>
+                                <li><i class="fas fa-arrow-left"></i> לחץ על "Install" והאפליקציה תתווסף אוטומטית
+                                    ל-Launchpad ול-Dock שלך.</li>
+                            </ul>
+                        </div>
+                        <button class="download-btn" onclick="toggleInstructions('mac-info')"
+                            style="margin-top: 0.5rem;">הורדה ל-Mac</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedback Section -->
+            <div class="download-footer-info"
+                style="text-align: center; margin-top: 4rem; padding: 0 10%; margin-bottom: 5rem;">
+                <div
+                    style="background: rgba(197, 160, 89, 0.05); border: 1px solid var(--glass-border); padding: 2.5rem; border-radius: 20px; display: inline-block; max-width: 800px;">
+                    <h4 style="color: var(--accent-gold); margin-bottom: 1rem; font-size: 1.3rem;">
+                        <i class="fas fa-exclamation-circle" style="margin-left: 10px;"></i>
+                        נתקלתם בתקלה או בעיה?
+                    </h4>
+                    <p style="color: var(--text-gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        אנחנו כאן כדי להשתפר! אם נתקלתם בבאג, תקלה טכנית, או שיש לכם הצעה לשיפור - נשמח מאוד שתשתפו
+                        אותנו. המשוב שלכם עוזר לנו לדייק את המערכת ולהפוך אותה לטובה יותר עבורכם.
+                    </p>
+                    <div
+                        style="height: 1px; background: linear-gradient(to right, transparent, var(--accent-gold), transparent); margin: 1.5rem 0; opacity: 0.3;">
+                    </div>
+                    <p style="color: #fff; font-weight: bold; font-size: 1.1rem; margin-bottom: 1.5rem;">
+                        <i class="fas fa-sync-alt" style="margin-left: 10px; color: var(--accent-gold);"></i>
+                        היומן מתעדכן באופן שוטף! ניתן להוריד את הגרסה המשופרת ביותר ישירות מהאתר בכל עת.
+                    </p>
+                    <a href="https://wa.me/972547899848?text=היי,%20נתקלתי%20בבעיה%20ביומן%20המסחר%20ואשמח%20לדווח%20עליה"
+                        target="_blank" class="report-problem-btn"
+                        style="display: inline-block; background: var(--accent-gold); color: var(--primary-dark); padding: 0.9rem 2rem; border-radius: 10px; text-decoration: none; font-weight: bold; transition: all 0.3s ease; margin-top: 1rem;">
+                        <i class="fab fa-whatsapp" style="margin-left: 8px;"></i>
+                        דווח על בעיה בוואטסאפ
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="main-footer" id="site-footer">
+        <h4 class="social-title">חפשו אותנו ברשתות החברתיות</h4>
+        <div class="footer-social">
+            <a href="https://wa.me/972547899848" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/channel/UCbWg2q7dwDcK6o7taavyJdw" target="_blank" title="YouTube"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/shimon_finance/" target="_blank" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@shimon_finance" target="_blank" title="TikTok"><i
+                    class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/sm.wn.swqrwn.538860" target="_blank" title="Facebook"><i
+                    class="fab fa-facebook-square"></i></a>
+        </div>
+
+        <div class="footer-bottom-links">
+            <hr class="footer-divider">
+            <div class="sub-links">
+                <a href="terms.html" target="_blank" class="footer-sub-link">תקנון אתר</a>
+                <span class="divider-line">|</span>
+                <a href="privacy-policy.html" target="_blank" class="footer-sub-link">מדיניות פרטיות</a>
+                <!-- UserWay Accessibility Widget -->
+                <script>(function (d) { var s = d.createElement("script"); s.setAttribute("data-account", "f9fN7O9r8p"); s.setAttribute("data-position", "6"); s.setAttribute("data-size", "standard"); s.setAttribute("data-color", "#2d68ff"); s.setAttribute("data-type", "1"); s.setAttribute("data-iconurl", ""); s.setAttribute("data-maincolor", ""); s.setAttribute("data-infrastructure", "v1"); s.src = "https://cdn.userway.org/widget.js"; (d.head || d.body).appendChild(s); })(document);</script>
+                <noscript>Please ensure JavaScript is enabled for purposes of <a href="https://userway.org">website
+                        accessibility</a></noscript>
+
+
+
+
+
+                <span class="divider-line">|</span>
+                <a href="accessibility.html" target="_blank" class="footer-sub-link">הצהרת נגישות</a>
+            </div>
+            <p class="copyright">&copy; 2026 S Trader - כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.remove('active');
+        }
+
+        function showPage(pageId) {
+            const pages = ['home', 'journals', 'courses'];
+            pages.forEach(p => {
+                const el = document.getElementById(p + 'Page');
+                if (el) el.style.display = 'none';
+            });
+            document.getElementById(pageId + 'Page').style.display = 'block';
+            window.scrollTo(0, 0);
+            localStorage.setItem('activePage', pageId);
+        }
+
+        function scrollToSection(sectionId) {
+            // First ensure we are on the Home page if needed
+            if (sectionId === 'about-section' || sectionId === 'contact-section' || sectionId === 'student-trades-section' || sectionId === 'questionnaire') {
+                showPage('home');
+            }
+            const el = document.getElementById(sectionId);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // נקה הגדרות נגישות ישנות כדי להחיל את המיקום החדש (Middle Left)
+            localStorage.removeItem('nagishli_pos');
+            localStorage.removeItem('Localize-NagishLi-A11y-Plugin-Settings');
+
+            // Restore last active page
+            const lastPage = localStorage.getItem('activePage');
+            if (lastPage) {
+                showPage(lastPage);
+            }
+
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function () {
+                    const item = this.parentElement;
+                    const answer = item.querySelector('.faq-answer');
+                    const icon = this.querySelector('i');
+
+                    // בדיקה האם השאלה הנוכחית כבר פתוחה
+                    const isOpen = item.classList.contains('active');
+
+                    // 1. סגירת כל השאלות האחרות
+                    document.querySelectorAll('.faq-item').forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                        const otherAnswer = otherItem.querySelector('.faq-answer');
+                        const otherIcon = otherItem.querySelector('i');
+                        if (otherAnswer) otherAnswer.style.display = 'none';
+                        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+                    });
+
+                    // 2. אם השאלה לא הייתה פתוחה - פתח אותה
+                    if (!isOpen) {
+                        item.classList.add('active');
+                        if (answer) answer.style.display = 'block';
+                        if (icon) icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+
+        function previewImage(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('mentorPhoto').src = e.target.result;
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function previewAboutImage(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const preview = document.getElementById('about-preview');
+                    const plusIcon = document.getElementById('plus-icon-container');
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                    plusIcon.style.display = 'none';
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
+        function previewImageToId(input, elementId) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById(elementId).src = e.target.result;
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function toggleInstructions(id) {
+            const info = document.getElementById(id);
+            const isActive = info.classList.contains('active');
+
+            // Close all
+            document.querySelectorAll('.pwa-info').forEach(el => el.classList.remove('active'));
+
+            if (!isActive) {
+                info.classList.add('active');
+            }
+        }
+
+        function previewLogo(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('display-logo').src = e.target.result;
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function previewNavLogo(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('nav-logo-img').src = e.target.result;
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function updateDotsGeneric(galleryId, dotsId) {
+            const gallery = document.getElementById(galleryId);
+            const dotsContainer = document.getElementById(dotsId);
+            if (!gallery || !dotsContainer) return;
+
+            const photos = gallery.querySelectorAll('.gallery-photo');
+
+            dotsContainer.innerHTML = '';
+            photos.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.className = 'dot' + (index === 0 ? ' active' : '');
+                dot.onclick = () => {
+                    const scrollAmount = photos[index].offsetLeft - gallery.offsetLeft;
+                    gallery.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+                };
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        function addNewGalleryImage(input, galleryId, btnId, dotsId) {
+            if (input.files && input.files.length > 0) {
+                const gallery = document.getElementById(galleryId);
+                const addBtn = document.getElementById(btnId);
+
+                Array.from(input.files).forEach(file => {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const newPhoto = document.createElement('div');
+                        newPhoto.className = 'gallery-photo';
+                        newPhoto.innerHTML = `<img src="${e.target.result}" alt="Gallery Image">`;
+                        gallery.insertBefore(newPhoto, addBtn);
+                        updateDotsGeneric(galleryId, dotsId);
+                    };
+                    reader.readAsDataURL(file);
+                });
+
+                input.value = '';
+            }
+        }
+
+
+
+        function updateFeatureImage(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('featureShowcaseImg').src = e.target.result;
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // Flying Numbers & Percentages Animation Logic
+        function spawnFlyingData() {
+            const container = document.getElementById('flyingData');
+            if (!container) return;
+
+            const isGreen = Math.random() > 0.4;
+            const color = isGreen ? '#22c55e' : '#ff4d4d';
+            const prefix = isGreen ? '+' : '-';
+            const value = (Math.random() * 8 + 1).toFixed(2); // Slightly higher values
+            const content = Math.random() > 0.5 ? `${prefix}${value}%` : `$${(Math.random() * 5000 + 100).toFixed(0)}`;
+
+            const el = document.createElement('div');
+            el.className = 'flying-number';
+            el.innerText = content;
+            el.style.color = color;
+            el.style.left = `${Math.random() * 96 + 2}%`; // Wider spread
+            el.style.top = `${Math.random() * 80 + 10}%`; // Top to bottom coverage
+            el.style.setProperty('--move-x', `${(Math.random() - 0.5) * 200}px`);
+
+            container.appendChild(el);
+
+            // Cleanup
+            setTimeout(() => el.remove(), 6000);
+        }
+
+
+        // Quiz Logic - Unfolding Vertical Flow
+        function handleOptionClick(btn, currentStep, nextStep) {
+            // Mark the selected button
+            const stepEl = document.getElementById('step' + currentStep);
+            stepEl.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+
+            // Save state to localStorage
+            saveQuizState();
+
+            const isFinalAlreadyVisible = document.getElementById('finalForm').style.display === 'block';
+
+            if (isFinalAlreadyVisible) {
+                // If we are already in review mode, just update state and stay here
+                return;
+            }
+
+            // Hide UI for current step and show next after a short delay for smoothness
+            setTimeout(() => {
+                stepEl.classList.remove('active');
+
+                if (nextStep === 'final') {
+                    // Reveal ALL steps for review
+                    document.querySelectorAll('.quiz-step').forEach(step => step.classList.add('active'));
+                    const finalForm = document.getElementById('finalForm');
+                    finalForm.style.display = 'block';
+                    finalForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                } else {
+                    const nextStepEl = document.getElementById('step' + nextStep);
+                    if (nextStepEl) {
+                        nextStepEl.classList.add('active');
+                        nextStepEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }
+            }, 300);
+        }
+
+        function saveQuizState() {
+            const selections = {};
+            document.querySelectorAll('.quiz-step').forEach(step => {
+                const stepId = step.id;
+                const buttons = step.querySelectorAll('.option-btn');
+                buttons.forEach((btn, index) => {
+                    if (btn.classList.contains('selected')) {
+                        selections[stepId] = index;
+                    }
+                });
+            });
+            localStorage.setItem('s_trader_quiz_selections', JSON.stringify(selections));
+        }
+
+        function loadQuizState() {
+            const saved = localStorage.getItem('s_trader_quiz_selections');
+            if (!saved) return;
+
+            const selections = JSON.parse(saved);
+            let latestStep = 1;
+
+            // Apply selections and find where we left off
+            Object.keys(selections).forEach(stepId => {
+                const stepEl = document.getElementById(stepId);
+                if (stepEl) {
+                    const buttons = stepEl.querySelectorAll('.option-btn');
+                    const selectedIndex = selections[stepId];
+                    if (buttons[selectedIndex]) {
+                        buttons[selectedIndex].classList.add('selected');
+                        const stepNum = parseInt(stepId.replace('step', ''));
+                        latestStep = Math.max(latestStep, stepNum + 1);
+                    }
+                }
+            });
+
+            // If quiz is finished, show all steps for review
+            if (latestStep > 4) {
+                document.querySelectorAll('.quiz-step').forEach(step => step.classList.add('active'));
+                const finalForm = document.getElementById('finalForm');
+                if (finalForm) finalForm.style.display = 'block';
+            } else {
+                // Otherwise only show the current question
+                document.querySelectorAll('.quiz-step').forEach(step => step.classList.remove('active'));
+                const nextStepEl = document.getElementById('step' + latestStep);
+                if (nextStepEl) nextStepEl.classList.add('active');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadQuizState();
+
+            // Initialize gallery dots
+            updateDotsGeneric('tradesGallery', 'galleryDots');
+            updateDotsGeneric('photosGallery', 'photoGalleryDots');
+
+            // Initialize flying animations
+            for (let i = 0; i < 5; i++) setTimeout(spawnFlyingData, i * 100);
+            setInterval(spawnFlyingData, 300);
+
+            // Enable horizontal scroll with mouse wheel for galleries
+            const galleries = document.querySelectorAll('.student-gallery');
+            galleries.forEach(gallery => {
+                gallery.addEventListener('wheel', (e) => {
+                    if (e.deltaY !== 0) {
+                        e.preventDefault();
+                        gallery.scrollLeft += e.deltaY;
+                    }
+                });
+
+                // Update dots on scroll
+                gallery.addEventListener('scroll', () => {
+                    const dotsId = gallery.id === 'tradesGallery' ? 'galleryDots' : 'photoGalleryDots';
+                    const dotsContainer = document.getElementById(dotsId);
+                    if (!dotsContainer) return;
+
+                    const dots = dotsContainer.querySelectorAll('.dot');
+                    const photos = gallery.querySelectorAll('.gallery-photo');
+                    const center = gallery.scrollLeft + (gallery.offsetWidth / 2);
+
+                    photos.forEach((photo, index) => {
+                        const photoCenter = photo.offsetLeft - gallery.offsetLeft + (photo.offsetWidth / 2);
+                        if (Math.abs(center - photoCenter) < photo.offsetWidth / 2) {
+                            dots.forEach(d => d.classList.remove('active'));
+                            if (dots[index]) dots[index].classList.add('active');
+                        }
+                    });
+                });
+            });
+        });
+
+        function scrollGallery(galleryId, direction) {
+            const gallery = document.getElementById(galleryId);
+            if (!gallery) return;
+
+            const scrollAmount = gallery.offsetWidth * 0.8; // Scroll 80% of width
+            gallery.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+
+        function handleQuizSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('quizName').value;
+            const phone = document.getElementById('quizPhone').value;
+            const email = document.getElementById('quizEmail').value;
+
+            // Collect all selected answers from the quiz
+            const answers = [];
+            const steps = document.querySelectorAll('.quiz-step');
+            steps.forEach((step, index) => {
+                const selectedBtn = step.querySelector('.option-btn.selected');
+                if (selectedBtn) {
+                    const questionText = step.querySelector('.quiz-question').textContent.trim();
+                    const answerText = selectedBtn.textContent.trim();
+                    // Format: Bold question, regular answer with checkmark
+                    answers.push(`<strong style="font-size: 16px; color: #333;">${questionText}</strong>\n<span style="color: #4ade80; font-size: 18px;">✓</span> ${answerText}`);
+                }
+            });
+
+            // Prepare email parameters
+            const templateParams = {
+                name: name,
+                phone: phone,
+                email: email,
+                answers: answers.length > 0 ? answers.join('\n\n') : 'לא נענו על שאלות'
+            };
+
+            console.log('Sending email with params:', templateParams);
+
+            // Send email via EmailJS
+            emailjs.send('service_rv8lvqd', 'template_yn73ghk', templateParams)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+
+                    // Show beautiful success modal
+                    showSuccessModal();
+
+                    // Reset form and clear storage
+                    document.getElementById('quizLeadForm').reset();
+                    localStorage.removeItem('s_trader_quiz_selections');
+
+                    // Reset quiz display
+                    document.querySelectorAll('.quiz-step').forEach((step, index) => {
+                        if (index > 0) step.classList.remove('active');
+                        step.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
+                    });
+                    document.getElementById('finalForm').style.display = 'none';
+
+                }, function (error) {
+                    console.log('FAILED...', error);
+                    alert('❌ אופס! משהו השתבש בשליחת הפנייה.\n\n' +
+                        'אנא נסה שוב או צור קשר ישירות:\n' +
+                        '📞 054-789-9848\n' +
+                        '📧 shukronshimon@gmail.com');
+                });
+        }
+
+        // Modal functions
+        function showSuccessModal() {
+            document.getElementById('successModal').style.display = 'flex';
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('successModal').style.display = 'none';
+        }
+    </script>
+
+
+</body>
+
+</html>

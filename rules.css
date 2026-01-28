@@ -1,0 +1,80 @@
+/* Trading Rules Styles - Premium Layout */
+.rules-premium-container {
+    width: 98%;
+    max-width: 1600px;
+    margin: 3rem auto;
+    background: rgba(10, 15, 26, 0.95);
+    border: 4px solid #c5a059;
+    border-radius: 35px;
+    padding: 3rem 2rem;
+    box-shadow: 0 0 60px rgba(197, 160, 89, 0.4);
+    position: relative;
+    overflow: hidden;
+    direction: rtl;
+    color: #fff;
+}
+
+.rules-main-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #4ade80;
+    /* Green title like the image */
+    font-weight: 900;
+    text-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns for balance */
+    gap: 3rem;
+    align-items: start;
+}
+
+.rules-list {
+    list-style: none;
+    padding: 0;
+}
+
+.rule-item {
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-right: 4px solid #c5a059;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+
+.rule-item:hover {
+    transform: translateX(-10px);
+    background: rgba(197, 160, 89, 0.05);
+}
+
+.rule-bullet {
+    color: #c5a059;
+    font-size: 1.5rem;
+    margin-top: -3px;
+}
+
+.rule-highlight {
+    color: #4ade80;
+    font-weight: 900;
+    font-size: 1.3rem;
+    border: 2px dashed #4ade80;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    background: rgba(74, 222, 128, 0.05);
+}
+
+@media (max-width: 1100px) {
+    .rules-grid {
+        grid-template-columns: 1fr;
+    }
+}
